@@ -1,0 +1,23 @@
+#!/usr/bin/env python
+
+import sys
+
+a = sys.argv[1]
+b = sys.argv[2]
+
+fa = open(a, "rb")
+fb = open(b, "rb")
+
+bytea = fa.read(1)
+byteb = fb.read(1)
+while bytea != "" and byteb !="" :
+    if bytea != byteb:
+        print "Output mismatch"
+        print bytea, byteb
+        sys.exit(1)
+
+    bytea = fa.read(1)
+    byteb = fb.read(1)
+
+print "Pass"
+sys.exit(0)

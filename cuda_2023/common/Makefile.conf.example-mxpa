@@ -1,0 +1,3 @@
+OPENCL_PATH=/scr/stratton/clangocltools_build/include/runtime
+OPENCL_LIB_PATH=/scr/stratton/clangocltools_build/runtime
+INTEL_COMPOSER_PATH=/scr/intel/composer_xe_2013.0.030
